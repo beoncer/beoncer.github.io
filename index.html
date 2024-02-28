@@ -120,6 +120,10 @@
 	margin-top: -100px;
   }
   
+  .third-div .info-img{
+	max-width: 60%;
+  }
+  
   @media (max-width: 768px) {
     .phrases{
 		width: 100%;
@@ -129,9 +133,6 @@
 		width: 200px;
 	}
 	
-	.left{
-		margin-top: -100px;
-	}
 	
 	.banner .right .img1{
 	  left: 40%; 
@@ -158,6 +159,10 @@
 	  .think-about{
 		margin-top: 0;
 	  }
+	  
+	  .third-div .info-img{
+		max-width: 100%;
+	  }
   }
 </style>
 </head>
@@ -171,7 +176,7 @@
 </div>
 
 <div class="banner" style="margin: 50px 0 150px 0; z-index: 0;">
-  <div class="left">
+  <div class="left" style="justify-content: center;">
     <img src="modified apes.png" alt="Modified Apes">
     <img src="header small text.png" alt="Collection of 8888 Modified Apes living in Stargaze Chain">
   </div>
@@ -183,7 +188,7 @@
 
 <div class="third-div">
   <img src="we are.png" alt="We Are" style="max-height: 100px;">
-  <img src="info.png" alt="Modified Apes desciprtion" style="max-width: 60%;">
+  <img class="info-img" src="info.png" alt="Modified Apes desciprtion">
   <img src="stats.png" alt="Modified Apes">
 </div>
 
