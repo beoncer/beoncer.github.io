@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modified Apes</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	overflow-x: hidden;
+  }
+  .header, .banner, .third-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+	z-index: 100;
+  }
+  .header{
+	justify-content: space-between;
+  }
+  .header img, .banner img, .third-div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .header img{
+	height: 40px;
+  }
+  .banner .left, .banner .right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	z-index: 0;
+  }
+  .third-div img {
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .banner .left, .banner .right {
+      flex-basis: 100%;
+    }
+  }
+  
+  .phrases{
+	position: relative;
+	width: 85%;
+	min-height: 300px;
+  }
+  
+  .phrases img{
+	position: absolute;
+	width: 300px;
+  }
+  
+  .banner .right .img1{
+	  max-width: 300px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%; 
+	  transform: translate(-50%, -50%);
+  }
+  
+  .banner .right .img2{
+	  max-width: 300px;
+	  position: absolute;
+	  top: calc(50% + 100px);
+	  left: calc(50% + 150px);
+	  transform: translate(-50%, -50%);
+  }
+  
+  @media (max-width: 768px) {
+    .phrases{
+		width: 100%;
+	}
+	
+	.left{
+		margin-top: -100px;
+	}
+	
+	.banner .right .img1{
+	  left: 40%; 
+	  transform: translate(-50%, -50%);
+	}
+	  
+	.banner .right .img2{
+	  left: calc(40% + 150px);
+	  transform: translate(-50%, -50%);
+	}
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="/"><img src="logo.png" alt="Logo"></a>
+  <a href=""><img src="twitter.png" alt="Twitter"></a>
+  <a href=""><img src="discord.png" alt="Discord"></a>
+  <a href=""><img src="stargaze.png" alt="Stargaze"></a>
+</div>
+
+<div class="banner" style="margin: 50px 0 150px 0; z-index: 0;">
+  <div class="left">
+    <img src="modified apes.png" alt="Modified Apes">
+    <img src="header small text.png" alt="Collection of 8888 Modified Apes living in Stargaze Chain">
+  </div>
+  <div class="right" style="position: relative;min-height: 400px;">
+    <img class="img1" src="img1.png" alt="Modified Ape">
+	<img class="img2" src="img2.png" alt="Modified Ape">
+  </div>
+</div>
+
+<div class="third-div">
+  <img src="we are.png" alt="We Are" style="max-height: 100px;">
+  <img src="info.png" alt="Modified Apes desciprtion" style="max-width: 60%;">
+  <img src="stats.png" alt="Modified Apes">
+</div>
+
+<div class="third-div" style="margin-top: -100px;">
+  <img src="think about.png" alt="Apes Think About" style="max-height: 100px;">
+  <div class="phrases">
+	<img style="top: 80%; left: 20%" src="phrase1.png" alt="Modified Apes Thought"> <!-- made with chalk and love -->
+	<img style="top: 50%; left: 40%" src="phrase2.png" alt="Modified Apes Thought"> <!-- games -->
+	<img style="top: 0; left: 30%" src="phrase3.png" alt="Modified Apes Thought"> <!-- cool community -->
+	<img style="top: 10%; left: 0" src="phrase4.png" alt="Modified Apes Thought"> <!-- cool art -->
+	<img style="top: 0; left: 60%" src="phrase5.png" alt="Modified Apes Thought"> <!-- dao -->
+	<img style="top: 0; left: 12%" src="phrase6.png" alt="Modified Apes Thought"> <!-- validator -->
+	<img style="top: 80%; left: 0" src="phrase7.png" alt="Modified Apes Thought"> <!-- discord events -->
+	<img style="top: 65%; left: 50%" src="phrase.png" alt="Modified Apes Thought"> <!-- modified apes-->
+	<img style="top: 40%; left: 70%" src="img3.png" alt="Modified Ape"> <!-- Modified Ape->
+  </div>
+</div>
+
+</body>
+</html>
