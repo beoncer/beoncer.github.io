@@ -5,13 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modified Apes</title>
 <style>
+  
+  html, body{
+    overflow-x: hidden;
+  }
+  
   body {
     margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-	overflow-x: hidden;
+	
   }
   .header, .banner, .third-div {
     display: flex;
@@ -74,9 +79,53 @@
 	  transform: translate(-50%, -50%);
   }
   
+  .p1{
+	top: 80%; left: 20%;
+  }
+  
+  .p2{
+	top: 50%; left: 40%;
+  }
+  
+  .p3{
+	top: 0; left: 30%;
+  }
+  
+  .p4{
+	top: 10%; left: 0;
+  }
+  
+  .p5{
+	top: 0; left: 60%;
+  }
+  
+  .p6{
+	top: 0; left: 12%;
+  }
+  
+  .p7{
+	top: 80%; left: 0;
+  }
+  
+  .p8{
+	top: 65%; left: 50%;
+  }
+  
+  .p9{
+	top: 40%; left: 70%;
+  }
+  
+  .think-about{
+	margin-top: -100px;
+  }
+  
   @media (max-width: 768px) {
     .phrases{
 		width: 100%;
+	}
+	
+	.phrases img{
+		width: 200px;
 	}
 	
 	.left{
@@ -92,6 +141,22 @@
 	  left: calc(40% + 150px);
 	  transform: translate(-50%, -50%);
 	}
+	
+	.p1{
+		top: 56%; left: 0;
+	  }
+	  
+	  .p3{
+	  display: none;
+	  }
+	  
+	.p4{
+		top: 12%; left: -2%;
+	  }
+	  
+	  .think-about{
+		margin-top: 0;
+	  }
   }
 </style>
 </head>
@@ -121,18 +186,18 @@
   <img src="stats.png" alt="Modified Apes">
 </div>
 
-<div class="third-div" style="margin-top: -100px;">
+<div class="third-div think-about">
   <img src="think about.png" alt="Apes Think About" style="max-height: 100px;">
   <div class="phrases">
-	<img style="top: 80%; left: 20%" src="phrase1.png" alt="Modified Apes Thought"> <!-- made with chalk and love -->
-	<img style="top: 50%; left: 40%" src="phrase2.png" alt="Modified Apes Thought"> <!-- games -->
-	<img style="top: 0; left: 30%" src="phrase3.png" alt="Modified Apes Thought"> <!-- cool community -->
-	<img style="top: 10%; left: 0" src="phrase4.png" alt="Modified Apes Thought"> <!-- cool art -->
-	<img style="top: 0; left: 60%" src="phrase5.png" alt="Modified Apes Thought"> <!-- dao -->
-	<img style="top: 0; left: 12%" src="phrase6.png" alt="Modified Apes Thought"> <!-- validator -->
-	<img style="top: 80%; left: 0" src="phrase7.png" alt="Modified Apes Thought"> <!-- discord events -->
-	<img style="top: 65%; left: 50%" src="phrase.png" alt="Modified Apes Thought"> <!-- modified apes-->
-	<img style="top: 40%; left: 70%" src="img3.png" alt="Modified Ape"> <!-- Modified Ape->
+	<img class="p1" style="" src="phrase1.png" alt="Modified Apes Thought"> <!-- made with chalk and love -->
+	<img class="p2" style="top: 50%; left: 40%" src="phrase2.png" alt="Modified Apes Thought"> <!-- games -->
+	<img class="p3" style="top: 0; left: 30%" src="phrase3.png" alt="Modified Apes Thought"> <!-- cool community -->
+	<img class="p4" style="top: 10%; left: 0" src="phrase4.png" alt="Modified Apes Thought"> <!-- cool art -->
+	<img class="p5" style="top: 0; left: 60%" src="phrase5.png" alt="Modified Apes Thought"> <!-- dao -->
+	<img class="p6" style="top: 0; left: 12%" src="phrase6.png" alt="Modified Apes Thought"> <!-- validator -->
+	<img class="p7" style="top: 80%; left: 0" src="phrase7.png" alt="Modified Apes Thought"> <!-- discord events -->
+	<img class="p8" style="top: 65%; left: 50%" src="phrase.png" alt="Modified Apes Thought"> <!-- modified apes-->
+	<img class="p9" style="top: 40%; left: 70%" src="img3.png" alt="Modified Ape"> <!-- Modified Ape->
   </div>
 </div>
 
