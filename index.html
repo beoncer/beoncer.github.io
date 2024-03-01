@@ -124,6 +124,14 @@
 	max-width: 60%;
   }
   
+  .stats-img{
+	margin-top: -50px;
+  }
+  
+  .footer{
+	flex-direction: row;
+  }
+  
   @media (max-width: 768px) {
     .phrases{
 		width: 100%;
@@ -145,15 +153,31 @@
 	}
 	
 	.p1{
-		top: 56%; left: 0;
+		top: 56%!important; left: 0!important;
 	  }
 	  
-	  .p3{
-	  display: none;
+	  .p3, .p7{
+	  display: none!important;
 	  }
 	  
 	.p4{
-		top: 12%; left: -2%;
+		top: 16%!important; left: -2%!important;
+	  }
+	  
+	  .p5{
+		left: 53%!important;
+	  }
+	  
+	  .p6{
+		left: 6%!important;
+	  }
+	  
+	  .p8{
+		left: 7%!important;
+	  }
+	  
+	  .p9{
+		left: 60%!important;
 	  }
 	  
 	  .think-about{
@@ -164,13 +188,50 @@
 		max-width: 100%!important;
 		width: 100%!important;
 	  }
+	  
+	  .header a:not(:first-child) {
+		width: 33%;
+		height: auto;
+	}
+	
+	.header a:not(:first-child) img {
+		height: auto;
+	}
+	
+	.banner{
+		margin-bottom: 90px!important;
+	}
+	  
+	  .logo{
+		width: 100%;
+		text-align: center;
+	  }
+	  
+	  .stats-img{
+		margin-top: -30px;
+	  }
+	  
+	  .footer{
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 70%;
+		margin-top: 105px!important;
+	  }
+	  .footer-links{
+		text-align: left;
+	  }
+	  
+	  .footer-links a img{
+		max-width: 200px;
+	  }
+	  
   }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <a href="/"><img src="logo.png" alt="Logo"></a>
+  <a class="logo" href="/"><img src="logo.png" alt="Logo"></a>
   <a href=""><img src="twitter.png" alt="Twitter"></a>
   <a href=""><img src="discord.png" alt="Discord"></a>
   <a href=""><img src="stargaze.png" alt="Stargaze"></a>
@@ -190,22 +251,37 @@
 <div class="third-div">
   <img src="we are.png" alt="We Are" style="max-height: 100px;">
   <img class="info-img" src="info.png" alt="Modified Apes desciprtion">
-  <img src="stats.png" alt="Modified Apes" style="margin-top: -50px;">
+  <img class="stats-img" src="stats.png" alt="Modified Apes">
 </div>
 
 <div class="third-div think-about">
   <img src="think about.png" alt="Apes Think About" style="max-height: 100px;">
   <div class="phrases">
 	<img class="p1" style="" src="phrase1.png" alt="Modified Apes Thought"> <!-- made with chalk and love -->
-	<img class="p2" style="top: 50%; left: 40%" src="phrase2.png" alt="Modified Apes Thought"> <!-- games -->
-	<img class="p3" style="top: 0; left: 30%" src="phrase3.png" alt="Modified Apes Thought"> <!-- cool community -->
-	<img class="p4" style="top: 10%; left: 0" src="phrase4.png" alt="Modified Apes Thought"> <!-- cool art -->
-	<img class="p5" style="top: 0; left: 60%" src="phrase5.png" alt="Modified Apes Thought"> <!-- dao -->
-	<img class="p6" style="top: 0; left: 12%" src="phrase6.png" alt="Modified Apes Thought"> <!-- validator -->
-	<img class="p7" style="top: 80%; left: 0" src="phrase7.png" alt="Modified Apes Thought"> <!-- discord events -->
-	<img class="p8" style="top: 65%; left: 50%" src="phrase.png" alt="Modified Apes Thought"> <!-- modified apes-->
-	<img class="p9" style="top: 40%; left: 70%" src="img3.png" alt="Modified Ape"> <!-- Modified Ape->
+	<img class="p2" style="" src="phrase2.png" alt="Modified Apes Thought"> <!-- games -->
+	<img class="p3" style="" src="phrase3.png" alt="Modified Apes Thought"> <!-- cool community -->
+	<img class="p4" style="" src="phrase4.png" alt="Modified Apes Thought"> <!-- cool art -->
+	<img class="p5" style="" src="phrase5.png" alt="Modified Apes Thought"> <!-- dao -->
+	<img class="p6" style="" src="phrase6.png" alt="Modified Apes Thought"> <!-- validator -->
+	<img class="p7" style="" src="phrase7.png" alt="Modified Apes Thought"> <!-- discord events -->
+	<img class="p8" style="" src="phrase.png" alt="Modified Apes Thought"> <!-- modified apes-->
+	<img class="p9" style="" src="img3.png" alt="Modified Ape"> <!-- Modified Ape -->
   </div>
+</div>
+
+<div class="footer" style="display: flex; width: 100%; margin-top: 160px; justify-content: space-evenly;">
+	<div>
+		<video loop autoplay muted playsinline width="300" height="300">
+		  <source src="gif.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		</video>
+	</div>
+	<div class="footer-links" style="display: flex; flex-direction: column;justify-content: space-evenly;">
+		  <img src="stay in loop.png" alt="Stay in the loop" style="max-height: 90px;">
+		  <a href="" style="margin-left: 20px;"><img src="twitter.png" alt="Twitter" style="max-height: 40px;"></a>
+		  <a href="" style="margin-left: 80px;"><img src="discord.png" alt="Discord" style="max-height: 60px;"></a>
+		  <a href="" style="margin-left: 160px;"><img src="stargaze.png" alt="Stargaze" style="max-height: 60px;"></a>
+	</div>
 </div>
 
 </body>
