@@ -225,6 +225,14 @@
 		max-width: 200px;
 	  }
 	  
+	  .disc-mob{
+		max-height: 25px;
+	  }
+	  
+	  .disc-mob-a{
+		text-align: center;
+	  }
+	  
   }
 </style>
 </head>
@@ -233,14 +241,14 @@
 <div class="header">
   <a class="logo" href="/"><img src="logo.png" alt="Logo"></a>
   <a href=""><img src="twitter.png" alt="Twitter"></a>
-  <a href=""><img src="discord.png" alt="Discord"></a>
+  <a class="disc-mob-a" href=""><img class="disc-mob" src="discord.png" alt="Discord"></a>
   <a href=""><img src="stargaze.png" alt="Stargaze"></a>
 </div>
 
 <div class="banner" style="margin: 50px 0 150px 0; z-index: 0;">
   <div class="left" style="justify-content: center;">
-    <img src="modified apes.png" alt="Modified Apes">
-    <img src="header small text.png" alt="Collection of 8888 Modified Apes living in Stargaze Chain">
+    <img style="max-width: min(70%, 500px);" src="modified apes.png" alt="Modified Apes">
+    <img style="max-width: min(100%, 500px);" src="header small text.png" alt="Collection of 8888 Modified Apes living in Stargaze Chain">
   </div>
   <div class="right" style="position: relative;min-height: 400px;">
     <img class="img1" src="img1.png" alt="Modified Ape">
@@ -251,10 +259,10 @@
 <div class="third-div">
   <img src="we are.png" alt="We Are" style="max-height: 100px;">
   <img class="info-img" src="info.png" alt="Modified Apes desciprtion">
-  <img class="stats-img" src="stats.png" alt="Modified Apes">
+  <img class="stats-img" src="stats.png" alt="Modified Apes" style="max-width: min(100%, 1000px);">
 </div>
 
-<div class="third-div think-about">
+<div class="third-div think-about" style="margin: 100px 0;">
   <img src="think about.png" alt="Apes Think About" style="max-height: 100px;">
   <div class="phrases">
 	<img class="p1" style="" src="phrase1.png" alt="Modified Apes Thought"> <!-- made with chalk and love -->
